@@ -1,0 +1,107 @@
+<div class="container">
+
+  <!--Right Side Bar-->
+  <div class="backpack">
+    <h5 class="text-center">BackPack</h5>
+    <div class="gold">Party Gold: {{ partyGold }}</div>
+
+    <!--Potions: repeat tracks by Index to allow Duplicates-->
+    <div class="inventory">
+      <button class="backPack1 btn btn-large" ng-repeat="potion in partyPotions  track by $index" style="background-image: url({{potion.bImage}})" ng-click="usePotionClick(potion)">
+    </div>
+  </div>
+  
+<!--Navigate between shops-->
+  <div class="header shopNav text-center">
+    <h1 class="pageHeader"><strong>Shop<strong></h1>
+    <ul class="shopNavBar text-center">
+      <li class="listItem" ng-click="chooseWeaponsStore()"><a>Weapons</a></li>
+      <li class="listItem" ng-click="chooseArmorStore()"><a>Armor</a></li>
+      <li class="listItem" ng-click="choosePotionsStore()"><a>Potions</a></li>
+    </ul>  
+  </div>
+
+<!--Shop Descriptions-->
+  <div class="row shopDescription">
+    <p class="weaponShopDescriptor" ng-show="weaponsStore">This is a Weapons shop!</p>
+    <p class="armorShopDescriptor" ng-show="armorStore">This is an Armor Shop!</p>
+    <p class-"potionShopDescriptor" ng-show="potionsStore">This is a Potions Shop!</p>
+  </div>
+
+<!--Item Card Space-->
+  <div class="itemCards row clearfix">
+
+<!--Weapon Cards-->
+    <div class="col-md-3 clearfix"  ng-show="weaponsStore" ng-repeat="weapon in weapons" >
+      <div  class="weapon-card" style="background-image:url({{weapon.image}})">
+        <div class="weaponHeader">
+          <h2 class="weaponHeading text-center">{{ weapon.name }}</h2>
+        </div>
+        <div class="weaponBody">
+          <div class="col-md-8">
+            <p class="weaponP"><strong>Damage:</strong> ({{ weapon.minDamage }}, {{ weapon.maxDamage }})</p>
+            <p class="weaponP"><strong>Cost:</strong> {{ weapon.cost }}</p>
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-info btn-sm pull-right pull-bottom weaponButtons itemButtons" ng-click="weaponClick(weapon)">Buy Me!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Armor Cards-->
+    <div class="col-md-3 clearfix" ng-show="armorStore" ng-repeat="armor in armor">
+      <div  class="armor-card" style="background-image:url({{armor.image}})">
+        <div class="armorHeader">
+          <h2 class="armorHeading text-center">{{ armor.name }}</h2>
+        </div>
+        <div class="armorBody">
+          <div class="col-md-8">
+            <p class="armorP"><strong>Absorb:</strong> ({{ armor.absorb }})</p>
+            <p class="armorP"><strong>Cost:</strong> {{ armor.cost }}</p>   
+          </div>
+          <div class="col-md-4">   
+            <button class="btn btn-info btn-sm pull-right pull-bottom armorButtons itemButtons" ng-click="armorClick(armor)">Buy Me!</button>  
+          </div>  
+        </div>        
+      </div>
+    </div>
+
+<!--Potion Cards-->
+    <div class="col-md-3 clearfix" ng-show="potionsStore" ng-repeat="potion in potions">
+      <div class="potion-card" style="background-image:url({{potion.image}})">
+        <div class="potionHeader">
+          <h2 class="potionHeading text-center">{{ potion.name }}</h2>
+        </div>
+        <div class="potionBody">
+          <div class="col-md-6">
+            <div class="potionP"><strong>Heal:</strong> ({{ potion.health }})</div>
+            <div class="potionP"><strong>Cost:</strong> {{ potion.cost }}</div> 
+          </div>
+          <div class="col-md-6">     
+            <button class="btn btn-info btn-sm pull-right pull-bottom potionButtons itemButtons" ng-click ="potionClick(potion)">Buy Me!</button>   
+          </div> 
+        </div>        
+      </div>
+    </div>
+  </div>
+
+<!--Shop Logs-->
+  <div class="row shopResolution">
+    <div id="shopLog1"></div>
+    <div id="shopLog2"></div>
+  </div>
+
+<!--Bottom Row-->
+  <div class="heroOptions">
+    <button class="heroChoice col-sm-2 btn btn-info btn-large" ng-repeat="hero in heroes" ng-click="chooseCurrentHero(hero)">
+      <h5><strong>{{ hero.name }}</strong></h5>
+      <h6><strong>Health:</strong> {{ hero.health }}</h6>
+      <h6><strong>Strength:</strong> {{ hero.strength }}</h6>
+      <h6><strong>Weapon:</strong> {{ hero.weapon.name }} ({{ hero.weapon.minDamage }}, {{ hero.weapon.maxDamage }})</h6>
+      <h6><strong>Armor:</strong> {{ hero.armor.name }} ({{ hero.armor.absorb }})</h6>
+    </button>
+    <button class="heroChoice col-sm-4 btn btn-danger btn-large" ui-sref="monsters">Investigate the Disturbance</button>
+
+  </div>
+</div>

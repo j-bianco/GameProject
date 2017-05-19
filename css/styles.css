@@ -1,0 +1,361 @@
+
+
+body {
+  background-image: url(../images/sandpoint2.png);
+  background-repeat: repeat-y;
+}
+
+.town-description {
+  border: 2px solid gray;
+  font-size: 20px;
+  background:  
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+  color: white;
+}
+
+.start-button {
+  margin-top: 400px;
+}
+
+.hero-image {
+  height: 300px;
+}
+
+.col-md-6 {
+  width: 48%;
+  margin: 1%;
+}
+.continue-to-store {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.shopNav {
+  border: 1px solid black;
+  color: white;
+  background:
+    linear-gradient(135deg, #708090 22px, #613 22px, #613 24px, transparent 24px, transparent 67px, #613 67px, #613 69px, transparent 69px),
+    linear-gradient(225deg, #708090 22px, #613 22px, #613 24px, transparent 24px, transparent 67px, #613 67px, #613 69px, transparent 69px)0 64px;
+    background-color:#708090;
+    background-size: 64px 128px
+    }
+
+.listItem {
+  display: inline;
+}
+
+.shopDescription {
+  color: white;
+  border: 1px solid black;
+  height: 100px;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    }
+
+.weapon-card {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right;  
+  width: 100%;
+  margin: 20px auto;
+  height: 313px;
+  border: 1px solid black;
+}
+
+.weaponBody {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: rgba(107,0,72, .5);
+  border: 1px solid black;
+  position: relative;
+  height: 53px;
+  bottom: -217px;
+}
+
+.weaponP {
+  margin: 0;
+  padding:0;
+}
+
+.weaponHeading {
+  margin: 0;
+  padding:0;
+  background-color: rgba(107,0,72, .5);
+  border: 1px, solid, black;
+}
+
+.armor-card {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right;  
+  width: 100%;
+  margin: 20px auto;
+  height: 313px;
+  border: 1px solid black;
+}
+
+.armorBody {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: rgba(94,103,100, .5);
+  border: 1px solid black;
+  position: relative;
+  bottom: -217px;
+  height: 53px;
+}
+
+.armorP {
+  margin: 0;
+  padding:0;
+}
+
+.armorHeading {
+  margin: 0;
+  padding:0;
+  background-color: rgba(94,103,100, .5);
+}
+
+.potion-card {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;  
+  width: 100%;
+  margin: 20px auto;
+  height: 313px;
+  border: 1px solid black;
+}
+
+.potionBody {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: rgba(255,0,10, .5);
+  border: 1px solid black;
+  position: relative;
+  bottom: -217px;
+  height:53px;
+}
+
+.potionP {
+  margin: 0;
+  padding:0;
+}
+
+.potionHeading {
+  margin: 0;
+  padding:0;
+  background-color: rgba(255, 0, 0, .5);
+}
+
+.backpack {
+  color: white;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  background:
+    radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+    radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+    #8a3;
+    background-size: 20px 20px;
+}
+
+.heroOptions {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
+    background-size: 20px 20px;
+  color: white;
+}
+
+.heroChoice {
+  border: 1px solid black;
+  height: 100%;
+}
+
+h6 {
+  margin: 0;
+}
+
+.gold {
+  height: 29%;
+  border: 1px solid black;
+}
+
+.inventory {
+  height: 69%;
+  border: 1px solid black;
+}
+
+.shopResolution {
+  
+  border: 1px solid, black;
+  color: white;
+  margin-bottom: 100px;
+  height: 100px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  left: 20px;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+
+.itemCards {
+  margin-bottom: 200px;
+}
+
+.itemButtons {
+  float: right;
+  /*vertical-align: middle;*/
+  } 
+
+.weaponsP {
+float: left;
+clear: left;
+}
+
+.armorP {
+
+}
+
+.potionsP {
+clear: left;
+}
+
+.incidentDescription {
+  color: white;
+  border: 1px solid green;
+  height: 100px;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    }
+
+.monsterCard {
+  height: 500px;
+}
+
+.battleMonsterPicture {
+  height: 300px;
+  margin-top: 10px;
+  float: right;
+}
+
+.battleHeroPicture {
+  height: 300px;
+  margin-top: 10px;
+  float: left;
+}
+
+.vs {
+  font-size: 100px;
+  color: gold;
+  margin-top: 100px;
+}
+
+.backPackImage {
+  height: 100%;
+  width: 100%;
+}
+
+.backPack1 {
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center;
+}
+
+.resolution {
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+  font-size: 30px;
+  color: white;
+
+  margin-top: 20px;
+}
+
+.resolution2 {
+    background:
+      linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+      linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+      linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+      linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+      linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+      linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+      background-color: #131313;
+      background-size: 20px 20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+a {
+  margin: 0 10px;
+  color: white;
+}
+
+.pageTitle {
+  background:
+  linear-gradient(135deg, #708090 22px, #613 22px, #613 24px, transparent 24px, transparent 67px, #613 67px, #613 69px, transparent 69px),
+  linear-gradient(225deg, #708090 22px, #613 22px, #613 24px, transparent 24px, transparent 67px, #613 67px, #613 69px, transparent 69px)0 64px;
+  background-color:#708090;
+  background-size: 64px 128px;
+  border: 1px solid black;
+  color: white;
+}
+
+.headSection {
+    background:
+  linear-gradient(135deg, #708090 22px, #613 22px, #613 24px, transparent 24px, transparent 67px, #613 67px, #613 69px, transparent 69px),
+  linear-gradient(225deg, #708090 22px, #613 22px, #613 24px, transparent 24px, transparent 67px, #613 67px, #613 69px, transparent 69px)0 64px;
+  background-color:#708090;
+  background-size: 64px 128px;
+  border: 1px solid black;
+  color: white;
+}
+}
+
+/*.hover {
+  transform: scale(1.2, 1.2);
+}*/
